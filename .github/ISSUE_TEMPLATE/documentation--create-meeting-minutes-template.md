@@ -1,9 +1,9 @@
 ---
-name: 'Feature request: Create meeting minutes template'
+name: 'Documentation: Create meeting minutes template'
 about: Create meeting minutes template of TOI
-title: ''
-labels: ''
-assignees: ''
+title: Documentation for agile
+labels: documentation
+assignees: michellelyHuang728
 
 ---
 
