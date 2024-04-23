@@ -1,21 +1,35 @@
+/*make background*/
 :root{
     --hi: blue;
     background: rgb(166, 232, 231);
 
 }
 
+
+/*adjust header height*/
 header{
     font-size: 1in;
-    line-height: 2em;
+    line-height: 1.7em;
 }
 
+/*adjust h1 color and font*/
 h1{
-    color: var(--hi, rgb(162, 15, 167));
-    font-size: 15vw;
+    color: var(--hi, #043);
+    font-size: 4vw;
 }
 
+/*adjust h2 color and font and position*/
 h2{
     font-size: 1cm;
+    text-align: center;
+    text-decoration: underline;
+}
+
+details{
+    & summary{
+        color:red;
+
+    }
 }
 
 div{
@@ -26,9 +40,9 @@ p{
     font-size: 30px;
 }
 
-/* .form-example{
+.form-example{
 
-} */
+}
 
 div#div1 {
     background-color: lightgrey;
@@ -67,27 +81,81 @@ div#div3 {
     border-width: 5px;
 }
 
+ul:has(li){
+    color:yellow;
+}
+
 #new-member {
+    display: inline-block;
+}
+
+#return-member{
     display: block;
 }
 
 #flexbox{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    gap:100px;
+    flex-wrap: nowrap;
 }
 
-*{
 
-}
 
-@media screen and(max-width:60px){
-    #recipe{
-        width:30%;
-        height:30%;
+@media screen and (max-width:800px) and (min-width:500px){
+    .fit-picture{
+        width: 50%;
+        height: 50%;
     }
 }
 
-a[href]{
-    
+a[href="https://www.youtube.com/@TIOatUCSD"]{
+    color:#043;
 }
 
+p, b{
+    color:orangered
+}
+
+video{
+    position: static;
+}
+
+.fit-picture{
+    position: sticky;
+    top: 0;
+}
+
+#official_web:hover{
+    color:pink;
+}
+
+#official_web:active{
+    color:blue;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:auto auto auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    background-color: pink;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+.grid-container .grid-item{
+    color:purple;
+}
+/* #flexbox li p{
+    color:purple;
+} */
